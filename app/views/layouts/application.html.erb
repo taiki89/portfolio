@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- /jQueryを読み込む -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- /スクリプトを読み込む -->
+  <%= javascript_include_tag 'application' %> 
+
 </head>
 <body>
 
@@ -24,9 +30,6 @@
 		</div>
 	</div>
 </header>
-
-
-
 
 <%= yield %>
 

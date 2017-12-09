@@ -14,3 +14,30 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(window).scroll(function() {
+  var windowH = $(window).height(),
+  scrollY = $(window).scrollTop();
+
+  $("h2").each(function() {
+    var elPosition = $(this).offset().top;
+
+    if (scrollY > elPosition + 200 - windowH) {
+      $(this).addClass("txt-effect");
+    }
+  });
+});
+
+$(window).scroll(function() {
+  var windowH = $(window).height(),
+  scrollY = $(window).scrollTop();
+
+  $(".contents p").each(function() {
+    var elPosition = $(this).offset().top;
+
+    if (scrollY > elPosition + 200 - windowH) {
+      $(this).addClass("txt-effect2");
+    }
+  });
+});
