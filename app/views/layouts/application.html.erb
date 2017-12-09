@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="header-left">
+			<%= image_tag("taiki.png", :class => "logo") %>
+		</div>
+		<div class="header-right">
+			<a href="/" class="login">趣味</a>
+		</div>
+		<div class="header-right">
+			<a href="/" class="login">仕事</a>			
+		</div>
+		<div class="header-right">
+			<a href="/" class="login">プロフィール</a>
+		</div>
+	</div>
+</header>
+
+
+
+
+<%= yield %>
+
+</body>
+</html>
